@@ -9,7 +9,13 @@
 </head>
 
 <body>
-<!--Header Title-->
+<!--This is the header-->
+    <header style="background-color: rgb(141, 141, 141);">
+        <h1>Webpage Title</h1>
+        <a href="">Home</a>
+        <a href="">Contact</a>
+    </header>
+
 <!--h1,h2,h3,h4,h5 are the sizes of the title-->
     <h1>H1 Title</h1>
     <h2>H1 Title</h2>
@@ -140,21 +146,27 @@ and an alterate text if the image doesn't load-->
 
 <br>
 <h1><u>Functional Button</u></h1>
-<button onclick="doSome()">Click Me</button>
-<p id="greeting">Hello</p>
+<button onclick="Greet()">Click Me</button>
+<p id="greeting">Hii</p>
 <script>
-    function doSome(){
+    function Greet(){
         let current = document.getElementById("greeting").innerHTML;
         
-        if(current == "Hello"){
+        if(current == "Hii"){
             document.getElementById("greeting").innerHTML = "Bye"
         }
         else {
-            document.getElementById("greeting").innerHTML = "Hello"
+            document.getElementById("greeting").innerHTML = "Hii"
         }
     }
 </script>
 
+<!--Footer-->
+<footer style="background-color: rgb(117, 117, 117);">
+    <hr>
+    Author Saswat<br>
+    &copy;2026 Copyright Reserved<br>
+    <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+</footer>
 </body>
-
 </html>
